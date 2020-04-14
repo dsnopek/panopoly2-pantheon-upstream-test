@@ -1,26 +1,36 @@
 {
     "name": "internal/upstream-configuration",
     "type": "project",
-    "version": "1.0.0",
-    "repositories": [
-        {
+    "version": "1.0.1",
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "drupal-ckeditor-plugins": {
+            "type": "composer",
+            "url": "https://panopoly.gitlab.io/drupal-ckeditor-plugins"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
-    ],
+    },
     "require": {
         "php": ">=7.0.8",
-        "composer/installers": "^1.0.20",
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6.5",
         "drupal/core-composer-scaffold": "^8.8.1",
         "drupal/core-recommended": "^8.8",
-        "pantheon-systems/drupal-integrations": "^8",
-        "pantheon-systems/quicksilver-pushback": "^2",
         "drush/drush": "~8.3",
         "drupal/console": "^1",
-        "cweagans/composer-patches": "^1.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "panopoly/panopoly": "2.x-dev",
+        "pantheon-systems/drupal-integrations": "^8",
+        "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
@@ -32,13 +42,15 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
         "dmore/behat-chrome-extension": "^1.3",
         "drupal/coder": "^8.3.1",
-        "drupal/drupal-extension": "~3",
+        "drupal/drupal-extension": "^3.2.2",
         "genesis/behat-fail-aid": "^2.1",
         "jcalderonzumba/gastonjs": "^1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
         "mikey179/vfsstream": "^1.2",
         "phpunit/phpunit": "^6.5",
         "squizlabs/php_codesniffer": "^3.4.0",
-        "symfony/css-selector": "^2.8"
+        "symfony/css-selector": "^2.8",
+        "consolidation/robo": "^1.4.9",
+        "spomky-labs/otphp": "^9.0"
     }
 }
