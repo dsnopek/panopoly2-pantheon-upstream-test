@@ -3,24 +3,24 @@
     "description": "Install Drupal (drops-8) with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
-    "repositories": {
-        "upstream": {
+    "repositories": [
+        {
             "type": "path",
             "url": "upstream"
         },
-        "drupal": {
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "drupal-ckeditor-plugins": {
+        {
             "type": "composer",
             "url": "https://panopoly.gitlab.io/drupal-ckeditor-plugins"
         },
-        "asset-packagist": {
+        {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    },
+    ],
     "require": {
         "internal/upstream-configuration": "*"
     },
